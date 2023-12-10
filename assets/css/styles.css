@@ -1,0 +1,93 @@
+:root{
+    --primary-color: rgb(117, 206, 247);
+    --secondary-color: rgb(100, 186, 226);
+    
+    --color-good: #59ff99;
+    --text-color-good: #205700;
+    --color-bad: #ff6868;
+    --text-color-bad: #7c0000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background: var(--primary-color);
+    font-size: 2.3rem;
+}
+
+.container{
+    background: #fff;
+    margin: 10rem auto;
+    max-width: 98rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.container form > label{
+    display: block;
+    margin: 1rem 0;
+}
+
+.container form > input{
+    width: 100%;
+    height: 4.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.container form > input:focus{
+    outline: 0.2rem solid var(--primary-color);
+}
+
+.container h1{
+    margin: 2rem 0;
+}
+
+.submit-button{
+    margin: 3rem 0;
+    background-color: var(--primary-color);
+    border-style: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.submit-button:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
+.grid-table{
+    display: flex;
+}
+
+.grid-content{
+    width: 50%;
+}
+.grid-content p {
+    margin: 0.5rem 0;
+}
+
+.result{
+    width: 100%;
+}
+.result p{
+    padding: 0.4rem 1.5rem;
+}
+
+.good{
+    background: var(--color-good);
+    color: var(--text-color-good);
+}
+.bad{
+    background: var(--color-bad);
+    color: var(--text-color-bad);
+}
